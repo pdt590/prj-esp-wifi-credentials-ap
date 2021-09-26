@@ -1,6 +1,6 @@
-# esp8266-wifi-credentials-webserver-eeproom
+# esp-wifi-credentials
 
-Esp8266 Wifi credentials provisioning using webserver
+Wifi credentials provisioning for ESP using softAP
 
 ## References
 
