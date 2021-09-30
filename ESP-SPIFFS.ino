@@ -1,6 +1,14 @@
-#include <ESP8266WiFi.h>
-#include <ESP8266WebServer.h>
-#include <FS.h>
+#ifdef ESP32
+  #include <WiFi.h>
+  #include <WebServer.h>
+  #include <SPIFFS.h>
+#elif defined(ESP8266)
+  #include <ESP8266WiFi.h>
+  #include <ESP8266WebServer.h>
+  #include <FS.h>
+#else 
+  #error "Not using the ESP32 or ESP8266"
+#endif
 #include <ArduinoJson.h>
 
 ESP8266WebServer server;

@@ -1,6 +1,14 @@
-#include <ESP8266WiFi.h>
-#include <ESP8266HTTPClient.h>
-#include <ESP8266WebServer.h>
+#ifdef ESP32
+  #include <WiFi.h>
+  #include <WiFiClient.h>
+  #include <WebServer.h>
+#elif defined(ESP8266)
+  #include <ESP8266WiFi.h>
+  #include <ESP8266HTTPClient.h>
+  #include <ESP8266WebServer.h>
+#else 
+  #error "Not using the ESP32 or ESP8266"
+#endif
 #include <EEPROM.h>
 
 //Variables

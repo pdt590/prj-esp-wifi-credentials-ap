@@ -1,15 +1,15 @@
-# esp-wifi-credentials
+# esp-wifi-credentials-ap
 
 Wifi credentials provisioning for ESP using softAP
 
 ## References
 
-- ESP8266WebServer-EEPROOM.ino
+- ESP-EEPROOM.ino
   - [ESP8266 Manual Wifi Configuration with EEPROM without Hard-Code](https://how2electronics.com/esp8266-manual-wifi-configuration-without-hard-code-with-eeprom)
   - [Arduino/libraries/DNSServer/examples/CaptivePortalAdvanced](https://github.com/esp8266/Arduino/tree/master/libraries/DNSServer/examples/CaptivePortalAdvanced)
   - [chriscook8/esp-arduino-apboot](https://github.com/chriscook8/esp-arduino-apboot)
 
-- ESP8266WebServer-SPIFFS.ino
+- ESP-SPIFFS.ino
   - [ESP8266 Storing Wi-Fi Settings In Flash Auto-Switch AP](https://github.com/acrobotic/Ai_Tips_ESP8266/blob/master/wifi_modes_switch/wifi_modes_switch.ino)
     - https://youtu.be/lyoBWH92svk 
 
